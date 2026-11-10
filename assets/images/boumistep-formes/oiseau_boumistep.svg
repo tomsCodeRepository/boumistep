@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29.633335mm"
+   height="23.093248mm"
+   viewBox="0 0 29.633335 23.093248"
+   version="1.1"
+   id="svg2142"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="oiseau_boumistep.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2144"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.70199214"
+     inkscape:cx="153.13562"
+     inkscape:cy="232.90859"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2139" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-64.709983,-87.202107)">
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="m 92.205602,110.22498 c -1.582576,-0.24763 -3.158553,-1.06394 -5.241478,-2.71493 l -1.690653,-1.34006 -2.28092,0.0722 c -3.608321,0.11423 -7.060877,-1.65286 -8.404577,-4.30164 -0.230319,-0.45402 -0.95967,-1.64537 -1.620776,-2.647456 L 71.765185,97.47113 69.22977,97.647657 c -1.394476,0.09709 -2.981896,0.245393 -3.527599,0.329565 -0.878052,0.135433 -0.992188,0.08962 -0.992188,-0.39828 0,-0.917387 2.528763,-1.859666 5.291667,-1.971807 1.180761,-0.04792 1.587267,-0.192378 2.155436,-0.765942 1.955686,-1.974257 6.320729,-1.506421 7.620862,0.816787 0.268695,0.480134 4.030623,-2.836428 7.205081,-6.352085 2.160629,-2.392862 2.910525,-2.656932 3.508232,-1.235405 0.371583,0.88374 0.346443,1.0932 -0.307981,2.565863 -0.361098,0.812588 -0.358394,0.921207 0.02833,1.137626 0.767749,0.429654 0.536577,1.911765 -0.463595,2.972258 -0.490125,0.519684 -0.787781,0.94488 -0.661459,0.94488 1.138857,0 -0.453879,2.587857 -1.869204,3.037064 -0.307369,0.09755 -0.547428,0.450046 -0.596741,0.876224 -0.05637,0.487175 -0.333116,0.832615 -0.873736,1.090635 -0.549167,0.26209 -0.670587,0.41607 -0.396875,0.50333 0.831439,0.26504 8.993319,7.88855 8.993319,8.40011 0,0.58408 -0.838443,0.8298 -2.137714,0.6265 z"
+       id="path518" />
+  </g>
+</svg>

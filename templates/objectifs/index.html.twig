@@ -1,0 +1,189 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ObjectifsController!{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {{ encore_entry_script_tags('menuPush') }}
+    {# {{ encore_entry_script_tags('gallery') }} #}
+{% endblock %}
+
+{% block body %}
+
+    {# <div style="height: 100vh; background-color: #80CBD8"> #}
+
+    <div class="" style="height: 100%; background-color: #fa983a; min-height: 100%">
+
+        <div class="container pt-5 mx-auto">
+            {# image étoile #}
+            <div style="max-height: 1px; max-width: 1px">
+                <img style="height: 150px;
+                            position: relative; left: -30px; top: 30px"
+                     class="d-none d-md-flex"
+                     src="{{ asset('build/images/boumistep-formes/etoile_de_mer.svg') }}"
+                />
+            </div>
+        </div>
+
+        <div class="separation d-none d-xl-block" style="height: 135px;"></div>
+        <div class="separation d-none d-md-block" style="height: 95px;"></div>
+        <div class="separation d-block d-md-none" style="height: 0px"></div>
+
+
+
+        <div class="container mx-auto">
+
+            <div class="row justify-content-around">
+
+
+                <div class="col-12 pb-5">
+
+
+                    <div class="separation" style="height: 40px"></div>
+
+                    <div class="container pt-5 mx-auto">
+
+                        <div class="row justify-content-around">
+
+
+                            <div class="col-11 col-sm-12 pb-2 d-flex">
+
+                                <div>
+                                    <p class="fw-light">
+                                        L'éducation est essentielle pour promouvoir l'action climatique.
+                                        Elle aide les gens à comprendre les effets de la crise climatique et à
+                                        lutter contre ces derniers, en les dotant des connaissances,
+                                        compétences, valeurs et attitudes dont ils ont besoin pour devenir des agents du
+                                        changement.
+                                    <figcaption class="blockquote-footer text-end">
+                                        <cite title="Source Title">9 nov. 2022 UNESCO</cite>
+                                    </figcaption>
+
+                                    </p>
+
+                                    <div class="separation d-390"></div>
+
+                                    <h3 class="pt-5">Les ateliers BoumiStep à l’école</h3>
+                                    <p class="fw-light">
+                                        Nous offrons un programme d’ateliers de sensibilisation sur le changement
+                                        climatique.
+                                        Le programme consiste en une série de 5 ateliers d’une heure et quart se
+                                        concentrant sur
+                                        les causes, les conséquences du dérèglement climatique
+                                        et les actions de mitigation ou d'adaptation qu’une personne peut prendre
+                                        individuellement ou en groupe. C’est parfait comme projet de
+                                        sensibilisation des enfants sur un demi trimestre, procurant informations et
+                                        inspiration
+                                        pour passer à l’action.
+                                        <a href="#"
+                                           style="font-size: 15px; color: #e55039; font-weight: 500; margin-left: 20px; text-decoration: none">
+                                            En savoir plus</a>
+
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    {#            <div class="separation" style="height: 30px"></div> #}
+
+                    <div class="separation" style="height: 50px"></div>
+                    {# <div class="bg-img"><img src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px"></div> #}
+
+
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center mx-auto" style="width: fit-content">
+
+                <div class="col-12 col-sm-11"
+                     style="width: auto;  background-color: white; border-radius: 8px; z-index:1">
+
+                    <div class="d-block d-lg-flex justify-content-center pianoCardWrapper"
+                         style="background-color: white; border-radius: 8px; width: fit-content">
+
+                        <div class="card card-anim pianoCardBackground-image mb-2 mb-lg-0"
+                             style="background-color: #80CBD8; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="margin-bottom: 13px">
+                                <h2 class="card-title">Informer</h2>
+                                <p class="fw-light">
+                                    Objectif 1. Enfants conscients et informés sur la thématique du
+                                    réchauffement
+                                    climatique et de ses causes dues aux activités humaines depuis la
+                                    révolution
+                                    industrielle et de ses conséquences pour la planète.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card card-anim pianoCardBackground-image mb-2 mb-lg-0"
+                             style="background-color: #2273B9; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="margin-bottom: 16px">
+                                <h2 class="card-title">Sensibiliser</h2>
+                                <p class="fw-light">
+                                    Objectif 2. En explorant certains secteurs d’activités ayant une
+                                    pertinence dans leur
+                                    vie quotidienne, les enfants deviennent plus équipés pour devenir des
+                                    éco-citoyens actifs.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card card-anim pianoCardBackground-image"
+                             style="background-color: #89B636; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="overflow: hidden; margin-bottom: 16px">
+                                <h2 class="card-title">Agir</h2>
+                                <p class="fw-light">
+                                    Objectif 3. Faire des enfants des acteurs qui viennent avec leurs
+                                    propres solutions
+                                    et peuvent transmettre ce qu’ils ont appris autour d’eux, continuer à
+                                    s’informer,
+                                    passer à l’action.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="separation" style="height: 50px"></div>
+
+        <section style="background-color: #00819d">
+            <h2>One</h2>
+        </section>
+        <section style="background-color: #0dcaf0">
+            <h2>Two</h2>
+        </section>
+        <section>
+            <h2>Three</h2>
+        </section>
+        <div class="separation" style="height: 150px"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

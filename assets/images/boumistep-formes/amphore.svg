@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29.293503mm"
+   height="42.361843mm"
+   viewBox="0 0 29.293502 42.361843"
+   version="1.1"
+   id="svg1189"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="amphore.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1191"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8079686"
+     inkscape:cx="64.993604"
+     inkscape:cy="64.637475"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1186">
+    <linearGradient
+       id="linearGradient2324"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.99784333;"
+         offset="0"
+         id="stop2322" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2324"
+       id="linearGradient2326"
+       x1="93.75322"
+       y1="145.34647"
+       x2="126.97297"
+       y2="145.34647"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="rotate(64.497238,110.36325,145.34756)" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-99.450174,-125.91677)">
+    <path
+       style="fill:#f1c473;fill-opacity:1;stroke:url(#linearGradient2326);stroke-width:0.565;stroke-dasharray:none"
+       d="m 99.636587,165.85457 c 0.289807,-13.65822 5.777813,-26.83351 13.712193,-32.91941 1.44094,-1.10524 1.51425,-1.77442 0.27669,-2.52578 -0.82958,-0.50367 -1.99513,-0.004 -2.69012,1.15366 -0.54169,0.90218 -1.61731,1.08846 -1.80324,0.6987 -2.64111,-0.88203 -1.93416,-1.38345 -0.38702,-3.96006 3.15477,-3.13235 6.53134,-2.90663 8.51959,0.56953 l 0.55784,0.97521 1.2827,-0.25528 c 1.36222,-0.2711 2.16791,-0.0162 2.56234,0.81063 0.13795,0.28917 0.67011,0.58956 1.24038,0.70013 2.68481,0.52061 3.96163,3.59685 2.92993,7.05911 -0.51837,1.73962 0.43815,1.7465 1.96584,2.06244 1.29207,0.26724 0.74479,2.70812 -0.2611,3.56196 -1.62787,1.44255 -2.23395,0.87514 -3.83789,-0.28532 -1.57041,-1.13619 -2.37311,-1.94597 -2.07153,-2.08983 0.36243,-0.17289 0.95357,-4.86466 0.65881,-5.22895 -0.26409,-0.32646 -0.29351,-0.30383 -0.26645,0.20488 0.16814,3.161 -2.49671,10.99861 -5.2318,15.3873 -1.77143,2.84244 -6.18968,8.46304 -7.39627,9.40911 -0.18237,0.14294 -0.81588,0.76562 -1.40779,1.3837 -5.81706,6.07377 -8.43401,7.10399 -8.353058,3.28827 z"
+       id="path548"
+       sodipodi:nodetypes="csssccccsscsscssccssccc"
+       class="UnoptimicedTransforms" />
+  </g>
+</svg>

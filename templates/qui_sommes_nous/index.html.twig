@@ -1,0 +1,239 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello QuiSommesNousController!{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {{ encore_entry_script_tags('menuPush') }}
+    {# {{ encore_entry_script_tags('gallery') }} #}
+{% endblock %}
+
+{% block body %}
+
+    {# <div style="height: 100vh; background-color: #80CBD8"> #}
+
+    <div class="" style="height: 100%; background-color: #FFFFFF; min-height: 100%">
+
+<div class="container pt-5 mx-auto">
+    <div style="max-height: 1px; max-width: 1px">
+        <img style="height: 150px;
+                            position: relative; left: -30px; top: 30px"
+             class="d-none d-md-flex"
+             src="{{ asset('build/images/boumistep-formes/etoile_de_mer.svg') }}"
+        />
+    </div>
+</div>
+        <div class="separation d-none d-md-block" style="height: 135px"></div>
+        <div class="separation d-block d-md-none" style="height: 30px"></div>
+
+
+
+        <div class="container pt-5 mx-auto">
+            {#image étoile#}
+
+
+            <div class="whitePageHeader mx-auto">
+                <h1 class="text-center">Qui sommes nous ?</h1>
+                <p class="pb-3 mx-0 mx-xl-auto">
+                    BoumiStep est une toute nouvelle association loi 1901 créée en avril 2022 à Cournonsec.
+                    <a style="font-size: 15px; color: #e55039; font-weight: 500" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Lire plus
+                    </a>
+                </p>
+
+                <div class="collapse" id="collapseExample">
+                        <p class="mx-0 mx-xl-auto">
+                            Face au dérèglement climatique, elle se propose de sensibiliser
+                            le public et particulièrement les enfants au phénomène du changement climatique, ses
+                            causes, conséquences et les actions qui peuvent être prises par les individus pour
+                            réduire l’émission de gaz à effet de serre et l’impact sur l’environnement.
+                        </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div style="background-color: lightgrey; min-height: 100%">
+
+            <div class="container pt-2 mx-auto">
+
+                <div class="separation" style="height: 30px"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="list-boumistep">
+
+                            <div class="list-item-boumistep">
+                                <h3 class="pt-2">Ce nom, d’où vient-il?</h3>
+                                <p class="fw-light">
+                                    En sanskrit, ‘bhumi’ signifie l’élément terre, c’est aussi le nom d’une
+                                    déesse hindoue qui personnifie la planète Terre. Step: le pas en anglais.
+                                    <br>
+
+                                </p>
+                            </div>
+
+                            <div class="list-item-boumistep">
+                                <h3 class="pt-2">L’inspiration</h3>
+                                <p class="fw-light">
+                                    BoumiStep s’est inspirée d’une association britannique, Climate Ed
+                                    <a target="_blank" style="text-decoration: none; color: #8395a7"
+                                       href="https://www.climateed.net">https://www.climateed.net/</a>, créée à
+                                    Londres en 2018 à Londres et dont Maud, une des
+                                    fondatrices de BoumiStep, a fait partie du Conseil d’Administration jusqu’en
+                                    mars 2023. Revenue s’installer en France en août 2021 après 25 ans à Londres, elle a
+                                    vite réalisé que le système éducatif français ne donnait pas plus d’infos sur ce sujet
+                                    que le système britannique aux élèves d’Outre Manche et même en fait, moins.
+                                    Par chance, elle rencontre vite bon nombre d’autres enthousiastes convaincus
+                                    du besoin de sensibiliser leurs concitoyens sur le sujet et de leur parler des
+                                    moyens de réduire notre impact environnemental.
+                                    <br>
+
+                                </p>
+                            </div>
+
+                            <div class="list-item-boumistep">
+                                <h3 class="pt-2">Combler une lacune</h3>
+                                <p class="fw-light">
+                                    ‘Le dérèglement climatique est trop peu enseigné, de l’école à l’université.
+                                    De plus en plus d’enseignants et de chercheurs critiquent la place
+                                    insuffisante
+                                    accordée
+                                    au changement climatique dans les programmes.’ Article paru dans Le Monde,
+                                    23
+                                    mars
+                                    2019.« La France est plutôt en retard en termes de contenu éducatif par
+                                    rapport
+                                    aux pays de
+                                    l’OCDE, mais il existe peu d’Etats très précurseurs en la matière dans le
+                                    monde
+                                    » affirme
+                                    David Wingenbus, qui reconnaît l’avance « de L’Etat de Californie ou des
+                                    pays
+                                    comme le
+                                    Royaume-Uni, l’Irlande, les pays nordiques comme la Suède ou les Pays-Bas ».
+                                    David
+                                    Wingenbus est Directeur de l’Office for Climate Education (OCE), une
+                                    organisation
+                                    chargée de promouvoir et de développer l’éducation au changement climatique,
+                                    Dec 2021.</p>
+                                <p class="fw-light"> De part ses conversations avec une conseillère pédagogique, Maud se rend
+                                    compte que l’enseignement sur ce thème est trop aléatoire, dépendant de l’intérêt de
+                                    l’enseignant en la matière et de ses connaissances.
+                                </p>
+                                <br>
+                            </div>
+
+                            <div class="list-item-boumistep">
+                                <h3 class="pt-2">Impact</h3>
+                                <p class="fw-light">
+                                    Une toute jeune association mais qui en quelques mois était prête à
+                                    travailler avec l’école locale. Nous nous sommes vite mis au travail et avons mis en place
+                                    un projet pilote avec un programme de 5 ateliers inspirés des ressources de Climate Ed
+                                    mais adaptées au public français.
+                                </p>
+                                <p class="fw-light">
+                                    Septembre - décembre 2002 : avec l’agrément de l’académie, nous présentons
+                                    le programme en deux séries de 5 ateliers à 4 classes de CE2/CM1-CM1 et CM2.
+                                </p>
+                                <p class="fw-light">
+                                    Environ 120 enfants en ont bénéficié. Tous confondus, CM1 et CM2 voici leur
+                                    évaluation des ateliers:
+                                </p>
+                                <ul class="listeBoumistep fw-light">
+                                    <li>
+                                        82% des enfants ont déclarés que les ateliers les ont aidé à
+                                        améliorer leurs connaissances sur le changement climatique de
+                                        manière significative
+                                    </li>
+                                    <li>
+                                        72% des enfants ont déclaré que les ateliers les ont rendu
+                                        optimistes qu'on peut régler le problème du changement
+                                        climatique
+                                    </li>
+                                    <li>
+                                        98% des enfants ont affirmé que les ateliers les ont aidé à
+                                        comprendre l'impact des transports, de l'alimentation et des
+                                        biens de consommation sur le changement climatique.
+                                    </li>
+                                    <li>
+                                        A l’issue des ateliers, 77% des enfants se disent inspirés pour
+                                        participer plus activement à la lutte contre le changement climatique
+                                    </li>
+                                    <li>
+                                        91% ont pensé que les ateliers étaient bons ou super bons
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    {#            <div class="separation" style="height: 30px"></div> #}
+
+                    <div class="separation" style="height: 50px"></div>
+                    {# <div class="bg-img"><img src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px"></div> #}
+
+
+                    <div class="separation" style="height: 100px"></div>
+
+                    <div class="bannerXXLWrapper">
+
+                        <div class="bannerXXL card-anim" style="background-color: #db2350;">
+                            <div class="item-1" {# style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}')" #}>
+                                <img class="d-none d-sm-block"
+                                     src="{{ asset('build/images/cards/logo-boumistep06.svg') }}"
+                                     style="height: 100px">
+                            </div>
+                            <div class="item-2">
+                                <div class="text-wrapper ms-3">
+                                    <div class="title">Boumistep actions</div>
+                                    <div class="sub-title">Take action</div>
+                                </div>
+
+                            </div>
+                            <div class="item-3">
+                                <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                            </div>
+                        </div>
+                        <div class="bannerXXL card-anim" style="background-color: #1d77bd;">
+                            <div class="item-1">
+                                <img class="d-none d-sm-block"
+                                     src="{{ asset('build/images/cards/logo-boumistep06.svg') }}"
+                                     style="height: 100px">
+                            </div>
+                            <div class="item-2">
+                                <div class="text-wrapper ms-3">
+                                    <div class="title">Boumistep actions</div>
+                                    <div class="sub-title">Take action</div>
+                                </div>
+                            </div>
+                            <div class="item-3">
+                                <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="separation" style="height: 150px"></div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

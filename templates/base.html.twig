@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+{#    <link rel="prefetch" href="{{ asset('build/styles/Mulish-VariableFont_wght.ttf') }}">#}
+    <meta charset="UTF-8">
+{#    <link rel="preconnect" href="{{ asset('build/styles/Mulish-VariableFont_wght.ttf') }}">#}
+    <meta name="viewport"
+          content="width=device-width; initial-scale=1.0; viewport-fit=cover">
+{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- possible content values: default, black or black-translucent -->
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent">
+    <meta name="theme-color" content="#a7dbe4">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" sizes="32x32" href="{{ asset('build/images/logos/boumistep_single_logo-02.svg') }}" type="image/svg">
+    <link rel="manifest" href="{{ asset('build/manifest/manifest.json') }}" crossorigin="use-credentials">
+    {#   crossorigin="use-credentials"      #}
+    <script>
+        /* Only register a service worker if it's supported */
+        {# if (navigator.serviceWorker) { #}
+        {#    navigator.serviceWorker.register('{{ asset('build/manifest/sw.js') }}') #}
+        {#        .then(function () {console.log('Enregistrement reussi.')}) #}
+        {#        .catch(function (e) {console.error(e)}); #}
+        {# } #}
+
+    </script>
+    {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+    {# <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         /> #}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+        {#{{ encore_entry_script_tags('menuPush') }}#}
+
+
+    {% endblock %}
+</head>
+
+
+<!-- DEBUT BODY  -->
+<body>
+{#    <section> #}
+<div class="page-wrapper cbp-spmenu-push" id="pageScroll">
+
+    {% block header %}
+        {{ include("header.html.twig") }}
+    {% endblock %}
+
+    <!-- DEBUT MAIN  (contribu au maintien de la cohesion de la page)-->
+    <div id="main">
+
+
+        {% block body %}
+
+
+        {% endblock %}
+
+
+    </div>
+    <!-- FIN MAIN  -->
+
+    {% block footer %}
+        {{ include("footer.html.twig") }}
+    {% endblock %}
+
+</div>
+{#    </section> #}
+</body>
+<!-- FIN BODY  -->
+
+
+</html>

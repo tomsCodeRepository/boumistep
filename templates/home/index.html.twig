@@ -1,0 +1,185 @@
+{% extends 'base.html.twig' %}
+
+
+
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {{ encore_entry_script_tags('home') }}
+    {{ encore_entry_script_tags('menuPush') }}
+    {{ encore_entry_script_tags('gallery') }}
+{% endblock %}
+
+{% block body %}
+
+    {# <div style="height: 100vh; background-color: #80CBD8"> #}
+
+
+
+    <div class="" style="background-color: #80CBD8; min-height: 100%">
+        <div class="container pt-5 mx-auto">
+            <div style="max-height: 1px; max-width: 1px">
+                <img style="height: 150px;
+                            position: relative; left: -30px; top: 30px"
+                     class="d-none d-md-flex"
+                     src="{{ asset('build/images/boumistep-formes/etoile_de_mer.svg') }}"
+                />
+            </div>
+        </div>
+
+        <div class="separation d-none d-xl-block" style="height: 135px;"></div>
+        <div class="separation d-none d-md-block" style="height: 55px;"></div>
+        <div class="separation d-block d-md-none" style="height: 35px"></div>
+
+
+
+        <div class="container mx-auto">
+
+            <div class="row justify-content-around">
+
+
+                <div class="col-12 pb-5">
+                    <div class="d-flex justify-content-center">
+                        <figure class="figure">
+                            <img style=""
+                                    {#src="{{ asset('build/images/cards/logo-boumistep06.svg') }}"#}
+                                 src="{{ asset('build/images/logos/logo-boumistep06_papillon.svg') }}"
+                                 class="figure-img rounded boumiPlanet" alt="...">
+                            <figcaption class="figure-caption text-end">Boumistep<sup class="">®</sup></figcaption>
+                        </figure>
+
+                    </div>
+
+                </div>
+
+
+                <div class="separation" style="height: 30px"></div>
+
+                <div class="container pt-0 mx-auto">
+
+                    <div class="row justify-content-around">
+
+                        <div class="col-11 col-sm-12 pb-5 d-flex">
+                                    <p class="text-start text-md-center fw-bold fs-4">
+                                        BoumiStep a pour but de sensibiliser les enfants au changement climatique et de les outiller pour passer à l'action.
+                                    </p>
+                        </div>
+
+
+                        <div class="col-11 col-sm-12 col-md-6 col-lg-4 pb-5 d-flex ms-0 me-3 ms-xl-5 justify-content-center me-xl-5 pe-0">
+
+                            <div class="d-flex justify-content-center">
+                                <figure class="figure">
+                                    <img src="{{ asset('build/images/home/accueil_atelier-550x733-flou.webp') }}"
+                                         class="figure-img img-fluid rounded"
+                                         style="aspect-ratio: 550 / 733; /*height: 733px; width: 550px*/"
+                                         alt="...">
+                                </figure>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-11 col-sm-12 pb-2 d-flex">
+
+                            <div>
+                                <p class="fw-light">
+                                    "Face à la catastrophe climatique mondiale, l’éducation au climat n’est pas
+                                    facultative.
+                                    Elle est absolument vitale."
+                                <figcaption class="blockquote-footer text-end">
+                                    <cite title="Source Title">David Edwards, secrétaire général de l’Internationale de
+                                        l’Éducation</cite>
+                                </figcaption>
+
+                                </p>
+
+                                <h3 class="pt-5">Les ateliers BoumiStep à l’école</h3>
+                                <p class="fw-light">
+                                    Nous offrons un programme d’ateliers de sensibilisation sur le changement
+                                    climatique.
+                                    Le programme consiste en une série de 5 ateliers d’une heure et quart se concentrant
+                                    sur
+                                    les causes, les conséquences du dérèglement climatique
+                                    et les actions de mitigation ou d'adaptation qu’une personne peut prendre
+                                    individuellement ou en groupe. C’est parfait comme projet de
+                                    sensibilisation des enfants sur un demi trimestre, procurant information et
+                                    inspiration
+                                    pour passer à l’action.<br>
+                                    <a href="#" style="font-size: 15px; color: #e55039; font-weight: 500; text-decoration: none">En savoir plus</a>
+
+
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="separation" style="height: 50px"></div>
+                {# <div class="bg-img"><img src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px"></div> #}
+
+
+                <div class="bannerXXLWrapper">
+
+                    <div class="bannerXXL card-anim" style="background-color: #db2350;">
+                        <div class="item-1" {# style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}')" #}>
+                            <img class="d-none d-sm-block"
+                                 src="{{ asset('build/images/cards/logo-boumistep06.svg') }}"
+                                 style="height: 100px">
+                        </div>
+                        <div class="item-2">
+                            <div class="text-wrapper ms-3">
+                                <div class="title">Boumistep actions</div>
+                                <div class="sub-title">Take action</div>
+                            </div>
+
+                        </div>
+                        <div class="item-3">
+                            <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                        </div>
+                    </div>
+                    <div class="bannerXXL card-anim" style="background-color: #1d77bd;">
+                        <div class="item-1">
+                            <img class="d-none d-sm-block"
+                                 src="{{ asset('build/images/cards/logo-boumistep06.svg') }}"
+                                 style="height: 100px">
+                        </div>
+                        <div class="item-2">
+                            <div class="text-wrapper ms-3">
+                                <div class="title">Boumistep actions</div>
+                                <div class="sub-title">Take action</div>
+                            </div>
+                        </div>
+                        <div class="item-3">
+                            <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="separation" style="height: 150px"></div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

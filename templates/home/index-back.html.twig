@@ -1,0 +1,267 @@
+{% extends 'base.html.twig' %}
+
+
+
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {# {{ encore_entry_script_tags('home') }} #}
+    {{ encore_entry_script_tags('home') }}
+    {{ encore_entry_script_tags('menuPush') }}
+    {{ encore_entry_script_tags('gallery') }}
+{% endblock %}
+
+{% block body %}
+
+    {#<div style="height: 100vh; background-color: #80CBD8">#}
+
+    <div class="container-fluid" style="height: 100%; background-color: #80CBD8" >
+
+
+        <div class="separation d-none d-md-block" style="height: 135px"></div>
+        <div class="separation d-block d-md-none" style="height: 130px"></div>
+
+
+        <div class="container">
+
+            {#<h1 class="bg-img" style="color: black; font-size: 90px;color: #392E44; font-weight: 900">Take Actions</h1>#}
+
+            <div class="d-flex justify-content-center">
+                <figure class="figure">
+                    <img style="max-height: 350px" src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-end">Boumistep<sup class="">®</sup></figcaption>
+                </figure>
+
+            </div>
+
+            <div style="max-height: 1px; max-width: 1px">
+{#                                <img style="height: 100px;
+                            position: relative; left: 600px; top: 30px"
+                     src="{{ asset('build/images/boumistep-formes/corolle.svg') }}"
+                />#}
+                <img style="height: 150px;
+                            position: relative; left: -50px; top: -80px"
+                     class="d-none d-md-flex"
+                     src="{{ asset('build/images/boumistep-formes/etoile_de_mer.svg') }}"
+                />
+    {#                <img style="height: 60px;
+                                position: relative; left: 200px; top: -400px"
+                         class="d-none d-xl-flex"
+                         src="{{ asset('build/images/boumistep-formes/chapeau_mexicain.svg') }}"
+                    />#}
+                <img style="height: 90px;
+                            position: relative; left: -1000px; top: 600px"
+                     src="{{ asset('build/images/boumistep-formes/feuille.svg') }}"
+                />
+{#                <img style="
+                            width: 300px;
+                            position: relative; left: -50px; top: 220px"
+                     src="{{ asset('build/images/boumistep-formes/cannelure.svg') }}"
+                />#}
+            </div>
+
+            <div class="separation" style="height: 30px"></div>
+
+    <div class="container pt-5 mx-auto">
+
+        <div class="row justify-content-around">
+
+            <div class="col-11 col-sm-12 pb-2 d-flex">
+
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="text-start text-md-center fw-bold fs-4">
+                            BoumiStep a pour but de sensibiliser les enfants au changement climatique et de les outiller pour passer à l'action. L'éducation est essentielle pour promouvoir l'action climatique.
+                            Elle aide les gens à comprendre les effets de la crise climatique et à lutter contre ces derniers, en les dotant des connaissances, compétences,
+                            valeurs et attitudes dont ils ont besoin pour devenir des agents du changement.
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-end fw-bold">
+                        9 nov.  <cite title="Source Title">UNESCO</cite>
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="col-11 col-sm-12 col-md-6 col-lg-4 pb-5 d-flex ms-0 me-3 ms-xl-5 justify-content-center me-xl-5 pe-0">
+
+                <div class="d-flex justify-content-center">
+                    <figure class="figure">
+                        <img src="{{ asset('build/images/home/atelier-64ppp.png') }}" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+{#            <div class="separation" style="height: 30px"></div>#}
+
+            <div>
+                <p>
+                    "Face à la catastrophe climatique mondiale, l’éducation au climat n’est pas facultative. Elle est absolument vitale."
+                <figcaption class="blockquote-footer text-end">
+                    <cite title="Source Title">David Edwards, secrétaire général de l’Internationale de l’Éducation</cite>
+                </figcaption>
+
+                </p>
+
+                    <h3 class="pt-5">Les ateliers BoumiStep à l’école</h3>
+                <p>
+                    Nous offrons un programme d’ateliers de sensibilisation sur le changement climatique.
+                    Le programme consiste en une série de  5 ateliers d’une heure et quart se concentrant sur les causes, les conséquences du dérèglement climatique
+                    et les actions de mitigation ou d'adaptation qu’une personne peut prendre individuellement ou en groupe. C’est parfait comme projet de
+                    sensibilisation des enfants sur un demi trimestre, procurant information et inspiration pour passer à l’action.<br>
+                    <a href="#" style="color: dimgrey">En savoir plus</a>
+
+
+                </p>
+            </div>
+
+
+            <div class="separation" style="height: 60px"></div>
+
+
+
+        <div>
+            <p>
+                Face au dérèglement climatique, le manque d’action de nos gouvernants et l’éco anxiété
+                qui en découle, BoumiStep propose de sensibiliser le public et particulièrement les
+                enfants au phénomène du changement climatique, ses causes, conséquences et surtout
+                les actions qui peuvent être prises par les individus ou les collectifs pour réduire
+                l’émission de gaz à effet de serre et l’impact sur l’environnement.
+            </p>
+            <div class="ms-0 ms-md-5">
+                <h2 class="mt-5">Informer</h2>
+                <p class="col-8 ms-4">
+                    Objectif 1. Enfants conscients et informés sur la thématique du réchauffement
+                    climatique et de ses causes dues aux activités humaines depuis la révolution
+                    industrielle et de ses conséquences pour la planète.
+                </p>
+                <h2>Sensibiliser</h2>
+                <p class="col-8 ms-4">
+                    Objectif 2. En explorant certains secteurs d’activités ayant une pertinence dans leur
+                    vie quotidienne, les enfants deviennent plus équipés pour devenir des
+                    éco-citoyens actifs.
+                </p>
+                <h2>Agir</h2>
+                <p class="col-8 ms-4">
+                    Objectif 3. Faire des enfants des acteurs qui viennent avec leurs propres solutions
+                    et peuvent transmettre ce qu’ils ont appris autour d’eux, continuer à s’informer,
+                    passer à l’action.
+                </p>
+            </div>
+        </div>
+
+
+            <div class="separation" style="height: 130px"></div>
+            {#<div class="bg-img"><img src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px"></div>#}
+            <div class="row d-flex justify-content-center mx-auto" style="width: fit-content">
+
+                <div class="col-12 col-sm-11" style="width: auto;  background-color: white; border-radius: 8px; z-index:1">
+
+                    <div class="d-block d-lg-flex justify-content-center pianoCardWrapper" style="background-color: white; border-radius: 8px; width: fit-content">
+
+                        <div class="card card-anim pianoCardBackground-image mb-2 mb-lg-0"
+                             style="background-color: #80CBD8; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="margin-bottom: 13px">
+                                <h2 class="card-title">Informer</h2>
+                                <p>
+                                    Objectif 1. Enfants conscients et informés sur la thématique du réchauffement
+                                    climatique et de ses causes dues aux activités humaines depuis la révolution
+                                    industrielle et de ses conséquences pour la planète.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card card-anim pianoCardBackground-image mb-2 mb-lg-0"
+                             style="background-color: #2273B9; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="margin-bottom: 16px">
+                                <h2 class="card-title">Sensibiliser</h2>
+                                <p>
+                                    Objectif 2. En explorant certains secteurs d’activités ayant une pertinence dans leur
+                                    vie quotidienne, les enfants deviennent plus équipés pour devenir des
+                                    éco-citoyens actifs.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card card-anim pianoCardBackground-image"
+                             style="background-color: #89B636; max-height: 593px; overflow: hidden">
+                            <div class="card-body" style="overflow: hidden; margin-bottom: 16px">
+                                <h2 class="card-title">Agir</h2>
+                                <p>
+                                    Objectif 3. Faire des enfants des acteurs qui viennent avec leurs propres solutions
+                                    et peuvent transmettre ce qu’ils ont appris autour d’eux, continuer à s’informer,
+                                    passer à l’action.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="separation" style="height: 100px"></div>
+
+            <div class="bannerXXLWrapper">
+
+                <div class="bannerXXL card-anim" style="background-color: #db2350;">
+                    <div class="item-1" {#style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}')"#}>
+                        <img class="d-none d-sm-block" src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px">
+                    </div><div class="item-2">
+                        <div class="text-wrapper ms-3">
+                            <div class="title">Boumistep actions</div>
+                            <div class="sub-title">Take action</div>
+                        </div>
+
+                    </div>
+                    <div class="item-3">
+                        <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                    </div>
+                </div>
+                <div class="bannerXXL card-anim" style="background-color: #1d77bd;">
+                    <div class="item-1">
+                        <img class="d-none d-sm-block" src="{{ asset('build/images/cards/logo-boumistep06.svg') }}" style="height: 100px">
+                    </div><div class="item-2">
+                        <div class="text-wrapper ms-3">
+                            <div class="title">Boumistep actions</div>
+                            <div class="sub-title">Take action</div>
+                        </div>
+                    </div>
+                    <div class="item-3">
+                        <img src="{{ asset('build/images/menu/rightarrow.svg') }}">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="separation" style="height: 150px"></div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

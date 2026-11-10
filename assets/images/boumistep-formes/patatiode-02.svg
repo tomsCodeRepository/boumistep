@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24.315708mm"
+   height="15.892452mm"
+   viewBox="0 0 24.315708 15.892452"
+   version="1.1"
+   id="svg4594"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="patatiode-02.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4596"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.70199214"
+     inkscape:cx="161.68272"
+     inkscape:cy="274.21959"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4591" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-62.469049,-76.103266)">
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       d="m 78.96943,91.440351 c -3.970615,-1.478036 -5.329113,-1.825162 -8.202083,-2.095807 -5.806903,-0.547028 -8.296283,-2.528091 -8.298297,-6.603828 -0.004,-8.037544 13.568302,-9.032512 21.436537,-1.57149 5.780685,5.481513 2.201899,12.928222 -4.936157,10.271125 z"
+       id="path556" />
+  </g>
+</svg>

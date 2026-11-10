@@ -1,0 +1,199 @@
+<!-- Début Header -->
+<div class="page-header" style="background-color: white;">
+
+
+    <!-- Début Navbar -->
+    {% if app.request.get('_route') == "app_qui_sommes_nous" %}
+    <div class="navCardBar" id="idNavCardBar" style="box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);">
+    {% else %}
+        <div class="navCardBar" id="idNavCardBar">
+    {% endif %}
+
+        <div class="item-0">
+            <button id="showLeftPush" class="btn btn-primary onFocusOutline shadow-none btnMenu">
+
+                <svg viewBox="0 0 130 90" width="45" height="45" fill="#333333">
+                    <rect width="100" height="18" rx="5" ry="5"></rect>
+                    <rect y="25" width="100" height="18" rx="5" ry="5"></rect>
+                    <rect y="50" width="100" height="18" rx="5" ry="5"></rect>
+                    <rect y="75" width="100" height="18" rx="5" ry="5"></rect>
+
+                </svg>
+                <div class="text-start lh-1" style="color: black; font-size: 11px">MENU</div>
+            </button>
+        </div>
+        <div class="item-1 menu-banner-motion" style="">
+            <a href="{{ path('home') }}">
+                {% if app.request.get('_route') == "app_qui_sommes_nous" %}
+                    <img class="whitheBackGroundSet" style="height: 70px; min-width: 350px"
+                         src="{{ asset('build/images/menu/left-menu-banner_craft_empty_white-hash-01-union_border.svg') }}">
+                {% else %}
+                    <img class="whitheBackGroundSet" style="height: 70px; min-width: 350px"
+                         src="{{ asset('build/images/menu/left-menu-banner_craft_empty_white-hash-01-union.svg') }}">
+                {% endif %}
+                <div class="left-menu-banner">
+                    <img style="height: 70px; border: none"
+                         src="{{ asset('build/images/logos/boumistep_whiteAndBlack-little_bird.svg') }}"
+                         {#src="{{ asset('build/images/menu/boumistep_whiteAndBlack-02.svg') }}"#}>
+                </div>
+            </a>
+        </div>
+        <ul class="item-2 justify-content-center">
+
+            <li class="link"><a href="{{ path('app_objectifs') }}">Nos objectifs</a></li>
+            <li class="link"><a href="{{ path('app_qui_sommes_nous') }}">Qui sommes nous ?</a></li>
+            <li class="link"><a>Passer à l'action</a></li>
+            {#            <li class="link"><a>Intéressé(e)?</a></li> #}
+            <li class="" style="width: 115px;">
+
+                <div style="">
+
+                    <div class="dropDownMask" id="maskHeight-01"
+                         style="padding-top: 19px;text-align: center;">Intéressé(e)?
+                    </div>
+                </div>
+                <ul class="dropDownMaskHover" id="cardHover-01" style="box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 1px; padding: 0px">
+                    {#                    <li class="link cardLink" style="height: 100%;position: relative; bottom: 150px">
+                    #}{#                        <a href="">Im a link</a> #}{#
+                    <div style="">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: black">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        </div>
+                    </div>
+                </li> #}
+                    <li class="link cardLink" style="margin-right: 5px">
+                        {#                        <a href="">Im a link</a> #}
+                        <div class="card card-anim menuCardBackground-image"
+                             style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}'); background-color: #FAB400">
+                            <div class="card-body">
+                                <h5 class="card-title" style="padding-top: 200px; color: black">Bénévolat</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="link cardLink" style="margin-right: 5px">
+                        {#                        <a href="">Im a link</a> #}
+                        <div class="card card-anim menuCardBackground-image"
+                             style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}'); background-color: #89B636">
+                            <div class="card-body" style="">
+                                <h5 class="card-title" style="padding-top: 200px; color: black">École</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="link cardLink" style="margin-right: 20px">
+                        {#                        <a href="">Im a link</a> #}
+                        <div class="card card-anim menuCardBackground-image"
+                             style="background-image:url('{{ asset('build/images/cards/logo-boumistep06.svg') }}'); background-color: #80CBD8">
+                            <div class="card-body" style="">
+                                <h5 class="card-title" style="padding-top: 200px; color: black">Adhésions</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                        </div>
+                    </li>
+                    {# <li class="link">
+                    #}{#                        <a href="">Im a link</a> #}{#
+                    <div class="card">
+                        <div class="card-body" style="background-image:url('{{ asset('build/images/menu/BANNER_10DAYS_ABI_OUTLINE_01.png') }}')">
+                            <div class="menuCardBackground-image">
+                                <h5 class="card-title" style="padding-top: 200px; color: black">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6></div>
+                    #}{# <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> #}{#
+                    #}{#                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a> #}{#
+                    </div>
+                </div>
+            </li> #}
+                </ul>
+            </li>
+            <li class="link"><a>Contact</a></li>
+
+            {#            <li class="link">Simple Link</li>
+            <li class="link">Another Link</li> #}
+        </ul>
+        <div class="item-3 menu-banner-joinUs" style="">
+            <div style="/*width: 300px;*/"></div>
+            <div class="right-menu-banner">rejoignez nous</div>
+        </div>
+
+    </div>
+
+
+    <!-- Fin Navbar-->
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+        <table class="menuResponsiveWidth">
+            <tbody class="menuPushFont">
+            <tr>
+                <td><a href="{{ path('home') }}"><i class="bi bi-house"></i> Accueil</a></td>
+
+            </tr>
+            <tr>
+                <td><a class="menuHover menuDecoNone"
+                       href="{{ path('app_objectifs') }}"><img
+
+                                src="{{ asset('build/images/menu/objectif-01.svg') }}"
+                                alt="icone flotte" height="28px"
+                                width="28px"/>
+                        Nos Objectifs</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="{{ path('app_qui_sommes_nous') }}"><i class="bi bi-question-diamond"></i> Qui sommes nous ?</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="{{ path('home') }}"><i class="bi bi-tools"></i> Nos activités</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="{{ path('home') }}"><i class="bi bi-journals"></i> Ressources pour passer à l'action</a>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <table>
+                        <a style="padding-bottom: 0px"><i class="bi bi-magic"></i> Intéressé(e)?</a>
+                        <tbody class="menuPushFontSousMenu">
+                        <tr>
+                            <td><a href="#">• Bénévolat</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">• École</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">• Adhésions</a></td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+            </tr>
+
+            <tr>
+                <td><a class="menuHover menuDecoNone" href="#"><i class="bi bi-book"></i> Contact</a></td>
+            </tr>
+
+            {#            <tr>
+                <td>
+            #}{# <a class="menuHover menuDecoNone" href="{{ path('app_flotte') }}"><i class="bi bi-geo-alt"></i> La flotte</a> #}{#
+            <a class="menuHover menuDecoNone"
+               href="#"><img
+
+                        src="{{ asset('build/images/logos/flotte-orange-03.svg') }}"
+                        alt="icone flotte" height="35px"
+                        width="35px"/>
+                Flotte</a>
+        </td>
+    </tr> #}
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!-- Fin Header -->

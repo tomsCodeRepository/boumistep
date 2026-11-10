@@ -1,0 +1,20 @@
+{
+  "name": "Sandra Chehab psychologue",
+  "short_name": "I/O 2015",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/faviconPsy-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+
+    },
+    {
+      "src": "/images/faviconPsy-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+
+    }
+  ]
+}
