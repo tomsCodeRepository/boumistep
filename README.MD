@@ -90,6 +90,3 @@ Ne commitez jamais de secrets : les valeurs réelles vont dans `.env.local` ou d
 
 Code publié à titre de démonstration. Tous droits réservés.
 
-## Licence
-
-À définir.
