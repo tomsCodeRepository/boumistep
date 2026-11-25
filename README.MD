@@ -109,6 +109,10 @@ Construire et démarrer l'environnement :
 docker compose up -d --build
 ```
 
+L'application est alors accessible à l'adresse :
+
+http://localhost:8097/
+
 Vérifier l'état des conteneurs :
 
 ```bash
