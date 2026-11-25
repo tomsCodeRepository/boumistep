@@ -4,25 +4,28 @@ Application web développée avec **Symfony** (PHP) et **npm** pour la gestion d
 
 ## Prérequis
 
-- PHP >= 8.1 (avec les extensions `ctype`, `iconv`)
-- [Composer](https://getcomposer.org/)
-- [Node.js](https://nodejs.org/) et npm
-- [Symfony CLI](https://symfony.com/download)
+### Exécution locale
 
+- PHP >= 8.1
+- Composer
+- Node.js et npm
+- Symfony CLI
+
+### Exécution avec Docker
+
+- Docker
+- Docker Compose
+
+---
 
 ## Installation
 
 ```bash
-# Cloner le dépôt
 git clone git@github.com:tomsCodeRepository/boumistep.git
 cd boumistep
-
-# Installer les dépendances PHP
-composer install
-
-# Installer les dépendances JavaScript
-npm install
 ```
+
+---
 
 ## Configuration
 
@@ -40,41 +43,105 @@ Générer un `APP_SECRET` :
 php -r "echo bin2hex(random_bytes(16));"
 ```
 
-## Base de données
+---
+
+## Lancement en local (Symfony CLI)
+
+### Installer les dépendances
+
+```bash
+composer install
+npm install
+```
+
+### Initialiser la base de données
 
 ```bash
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 ```
 
-## Lancement
+### Compiler les assets
 
 ```bash
-# Compiler les assets front
 npm run build
+```
 
-# Exécuter le script de build Composer
+### Exécuter le build Composer
+
+```bash
 composer build
+```
 
-# Démarrer le serveur local
+### Démarrer l'application
+
+```bash
 symfony serve
 ```
 
-L'application est ensuite accessible sur https://127.0.0.1:8000.
+L'application est alors accessible à l'adresse :
 
-Pour le développement, `npm run watch` (ou `npm run dev`) recompile les assets automatiquement.
+```text
+https://127.0.0.1:8000
+```
+
+Pour le développement, vous pouvez utiliser :
+
+```bash
+npm run watch
+```
+
+ou
+
+```bash
+npm run dev
+```
+
+afin de recompiler automatiquement les assets lors des modifications.
+
+---
+
+## Lancement avec Docker
+
+Construire et démarrer l'environnement :
+
+```bash
+docker compose up -d --build
+```
+
+Vérifier l'état des conteneurs :
+
+```bash
+docker compose ps
+```
+
+Afficher les logs :
+
+```bash
+docker compose logs -f
+```
+
+Arrêter l'environnement :
+
+```bash
+docker compose down
+```
+
+---
 
 ## Structure du projet
 
+```text
+├── assets/         # JavaScript et CSS source
+├── config/         # Configuration Symfony
+├── migrations/     # Migrations Doctrine
+├── public/         # Point d'entrée web
+├── src/            # Contrôleurs, entités et services
+├── templates/      # Vues Twig
+└── tests/          # Tests
 ```
-├── assets/        # JavaScript et CSS source
-├── config/        # Configuration Symfony
-├── migrations/    # Migrations Doctrine
-├── public/        # Point d'entrée web
-├── src/           # Code PHP (contrôleurs, entités, services)
-├── templates/     # Vues Twig
-└── tests/         # Tests
-```
+
+---
 
 ## Tests
 
@@ -82,11 +149,21 @@ Pour le développement, `npm run watch` (ou `npm run dev`) recompile les assets 
 php bin/phpunit
 ```
 
+---
+
 ## Sécurité
 
-Ne commitez jamais de secrets : les valeurs réelles vont dans `.env.local` ou dans les variables d'environnement du serveur.
+Ne commitez jamais de secrets dans le dépôt.
+
+Les valeurs sensibles doivent être placées dans :
+
+- `.env.local`
+- les variables d'environnement du serveur
+- les secrets de votre plateforme d'hébergement
+
+---
 
 ## Licence
 
-Code publié à titre de démonstration. Tous droits réservés.
-
+Projet publié à titre de démonstration.
+Tous droits réservés.

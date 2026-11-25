@@ -1,0 +1,15 @@
+.git
+.idea
+node_modules
+vendor
+var
+public/build
+.env.local
+.env.*.local.git
+.idea
+node_modules
+vendor
+var
+public/build
+.env.local
+.env.*.local
