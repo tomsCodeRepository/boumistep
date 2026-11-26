@@ -111,7 +111,9 @@ docker compose up -d --build
 
 L'application est alors accessible à l'adresse :
 
+```text
 http://localhost:8097/
+```
 
 Vérifier l'état des conteneurs :
 
